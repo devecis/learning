@@ -6,11 +6,11 @@
 #for num in range(1,11):
  #   print(num)
  
-def odd():
-    lower_limit = int(input('Pick a starting point: '))
-    upper_limit = int(input('pick a stopping point: '))
+def odd(): #start of my function
+    lower_limit = int(input('Pick a starting point: ')) #picking the lower number
+    upper_limit = int(input('pick a stopping point: ')) #picking the upper number
     
-    for num in range(lower_limit, upper_limit):
-        if(num%2 != 0):
-            print (num)
-odd()
+    for num in range(lower_limit, upper_limit): # For loop for lower and upper number
+        if(num%2 != 0): #Math for deciding if it is a odd or even number
+            print (num) #printing all the numbers within range
+odd() #stopping the function
