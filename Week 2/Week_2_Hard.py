@@ -7,4 +7,17 @@
     #six-year-old
 #The word isograms, however, is not an isogram, because the s repeats.
 
-word = input('Enter a word to see if it is a isogram: ')
+def isogram(word):
+    for letter in word:
+        if word.count (letter) > 1:
+            print("You're muthafuckin right it's an isogram")
+    else:
+        print("Nah dawg that shit ain't no isogram")    
+
+def main():
+    word = input('Enter a word to see if it is a isogram: ').lower()
+    isogram(word)
+
+if __name__ == '__main__':
+    main()
+#size = max([len(word) for word in phrase.split()])
