@@ -17,14 +17,17 @@
 def frame(phrase):
     
     size = max([len(word) for word in phrase.split()])
-    print('*' * (size+5))
+    #For word in phrase:
+       #return the length of a word in that list
+    # then return the longest word in that list
+    print('*' * (size+4))
     for word in phrase.split():
-        print(f'* {word.center(1)} *')
+        print(f'* {word.center(size)} *')
     print('*' * (size+4))
        
 def main():
     phrase = input("Enter a phrase: ")
-    frame (phrase)
+    frame(phrase)
     
 if __name__ == '__main__':
     main()

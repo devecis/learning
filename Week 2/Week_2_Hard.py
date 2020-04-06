@@ -8,11 +8,13 @@
 #The word isograms, however, is not an isogram, because the s repeats.
 
 def isogram(word):
+    fuck = []
     for letter in word:
-        if word.count (letter) > 1:
-            print("You're muthafuckin right it's an isogram")
+        fuck.append(letter)
+    if fuck.count(letter) > 1:
+            print("Nah dawg that shit ain't no isogram")
     else:
-        print("Nah dawg that shit ain't no isogram")    
+            print("You're muthafuckin right it's an isogram")    
 
 def main():
     word = input('Enter a word to see if it is a isogram: ').lower()
@@ -20,4 +22,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-#size = max([len(word) for word in phrase.split()])
+    
