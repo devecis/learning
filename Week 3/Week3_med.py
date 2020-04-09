@@ -1,6 +1,5 @@
-# Write a function that flips a coin. It should return a string that reads 'Heads' or 'Tails'. Bonus points if you add the ability to make the coin unfair.
-import random
-
+#Write a magic eightball function. It should return strings instead of printing to the console. 
+# The possible answers for an eightball are here: https://en.wikipedia.org/wiki/Magic_8-Ball#Possible_answers
 
 def eightball():
     phrasedict = {
