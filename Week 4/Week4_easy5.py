@@ -1,0 +1,1 @@
+rev = print(input("Give me something: ")[::-1])
