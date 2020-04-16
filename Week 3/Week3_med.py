@@ -25,4 +25,3 @@ def eightball():
         20: "Very doubtful",
     }
 
-    return phrasedict.get(int(random() * 20))

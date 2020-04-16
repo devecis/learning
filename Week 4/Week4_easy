@@ -1,0 +1,3 @@
+#Make a function that returns if a number is even (And false if it is odd).
+
+num = int(input('Is the number even?'))
