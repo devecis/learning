@@ -6,6 +6,7 @@
 # See here: https://docs.python.org/3/tutorial/classes.html
 
 
+from pprint import pprint
 class Vehicles:
     """ For defining vehicles"""
 
@@ -23,5 +24,5 @@ class Vehicles:
                 seats.append(None)
                 self.grid.update({rows: seats})
 
-C130 = Vehicles('lockheed', 40, 2, 4324323424, 40000)
-print(C130.grid)
+C130 = Vehicles('lockheed', 40, 5, 4324323424, 40000)
+pprint(C130.grid)
