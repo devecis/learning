@@ -1,0 +1,1 @@
+# Write an encoder and decoder for a simple Caesar cipher, which outputs a scrambled message given a phrase and an offset.

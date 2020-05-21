@@ -26,7 +26,7 @@ def lotto_numbers():
     return lotto_nums
   
 def main():
-    answer = input('Do you want to get lottery numbers (1) or play the game (2) or quit (Q)?')
+    answer = input('Do you want to get lottery numbers (1) or play the game (2) or quit (Q)? ')
     if (answer == '1'):
         numbers = lotto_numbers()
         print(numbers)
