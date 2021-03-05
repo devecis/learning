@@ -1,0 +1,3 @@
+dog, cat, bird, horse, cow, wolf, ant, bee, chicken
+chicken, bee, ant, wolf, cow, horse, bird, cat, dog
+dog, bird, cow, ant, chicken

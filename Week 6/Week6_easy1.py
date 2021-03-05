@@ -7,7 +7,7 @@
 def odd_num():
     num = 100
     odds = []
-    for i in range(1, num):
+    for i in range(num):
         if i % 2 != 0:
             odds.append(i)
     return(odds)
