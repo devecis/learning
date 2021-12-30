@@ -14,18 +14,23 @@ Give user 3 tries
 
 import random
 
-def guessing_game():
+def guessing_game(user_guess):
     answer = random.randint(1, 100)
 
     for i in range(3):
-        user_guess = int(input("Guess a number between 1 - 100, you only get 3 tries. "))
+        
         if user_guess == answer:
             print(f"Right! The answer is {user_guess}")
             break
-        if user_guess < answer:
+        elif user_guess < answer:
                print(f"Your guess of {user_guess} is too low!")         
-        else:
-            if user_guess > answer:
+        elif user_guess > answer:
                 print(f"Your guess of {user_guess} is too high!")
-              
-guessing_game()
+                  
+
+def main():
+    user_guess = int(input("Guess a number between 1 - 100, you only get 3 tries. "))
+    guessing_game(user_guess)
+
+if __name__ == "__main__":
+    main()
