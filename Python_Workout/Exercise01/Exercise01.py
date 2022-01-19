@@ -12,10 +12,17 @@ Give user 3 tries
 """
 
 
+from os import system, name
+from time import sleep
 import random
-answer = random.randint(1, 100)
 
-def guessing_game():
+def clear():  # Used to clear the screen after session
+    if name == 'nt':
+        _ = system('cls')
+        
+answer = random.randint(1, 100) #picking as number between 1 and 100
+
+def guessing_game():  #the guessing game. The user input is in here instead of main because the user has to do it 3 times
     for i in range(3):
         user_guess = int(input("Guess a number between 1 - 100, you only get 3 tries. "))
         if user_guess == answer:
@@ -28,8 +35,9 @@ def guessing_game():
                   
 
 def main():
-    #user_guess = int(input("Guess a number between 1 - 100, you only get 3 tries. "))
     guessing_game()
-    
+    sleep(2)
+    clear()
+
 if __name__ == "__main__":
     main()
